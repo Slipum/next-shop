@@ -1,4 +1,7 @@
+import { cn } from '@/lib/utils';
 import React from 'react';
+import { ProductCard } from './product-card';
+import { Title } from './title';
 
 interface Props {
 	title: string;
@@ -17,7 +20,18 @@ export const ProductsGroupList: React.FC<Props> = ({
 }) => {
 	return (
 		<div className={className}>
-			<h1></h1>
+			<Title text={title} size="lg" className="font-extrabold mb-5" />
+			<div className={cn('grid grid-cols-3 gap-[50px]', listClassName)}>
+				{items.map((product, index) => (
+					<ProductCard
+						key={product.id}
+						id={product.id}
+						name={product.name}
+						imageUrl={product.imageUrl}
+						price={product.items[0].price}
+					/>
+				))}
+			</div>
 		</div>
 	);
 };
