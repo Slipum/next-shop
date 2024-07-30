@@ -31,7 +31,7 @@ export const ProductCard: React.FC<Props> = ({ id, name, price, imageUrl, classN
 					<span className="text-[20px]">
 						from <b>{formattedPrice}</b>
 					</span>
-					<Button>
+					<Button variant="secondary" className="font-bold text-base text-primary">
 						<Plus size={20} className="mr-1" />
 						Add
 					</Button>
