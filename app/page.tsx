@@ -27,21 +27,21 @@ export default function Home() {
 										items: [{ price: 1839.08 }],
 									},
 									{
-										id: 1,
+										id: 2,
 										name: 'MacBook Pro Laptop M3 Pro',
 										imageUrl: 'https://m.media-amazon.com/images/I/618d5bS2lUL._AC_SL1500_.jpg',
 										price: 1839.08,
 										items: [{ price: 1839.08 }],
 									},
 									{
-										id: 1,
+										id: 3,
 										name: 'MacBook Pro Laptop M3 Pro',
 										imageUrl: 'https://m.media-amazon.com/images/I/618d5bS2lUL._AC_SL1500_.jpg',
 										price: 1839.08,
 										items: [{ price: 1839.08 }],
 									},
 									{
-										id: 1,
+										id: 4,
 										name: 'MacBook Pro Laptop M3 Pro',
 										imageUrl: 'https://m.media-amazon.com/images/I/618d5bS2lUL._AC_SL1500_.jpg',
 										price: 1839.08,
@@ -49,6 +49,40 @@ export default function Home() {
 									},
 								]}
 								categoryId={1}
+							/>
+							<ProductsGroupList
+								title="Phones"
+								items={[
+									{
+										id: 1,
+										name: 'MacBook Pro Laptop M3 Pro',
+										imageUrl: 'https://m.media-amazon.com/images/I/618d5bS2lUL._AC_SL1500_.jpg',
+										price: 1839.08,
+										items: [{ price: 1839.08 }],
+									},
+									{
+										id: 2,
+										name: 'MacBook Pro Laptop M3 Pro',
+										imageUrl: 'https://m.media-amazon.com/images/I/618d5bS2lUL._AC_SL1500_.jpg',
+										price: 1839.08,
+										items: [{ price: 1839.08 }],
+									},
+									{
+										id: 3,
+										name: 'MacBook Pro Laptop M3 Pro',
+										imageUrl: 'https://m.media-amazon.com/images/I/618d5bS2lUL._AC_SL1500_.jpg',
+										price: 1839.08,
+										items: [{ price: 1839.08 }],
+									},
+									{
+										id: 4,
+										name: 'MacBook Pro Laptop M3 Pro',
+										imageUrl: 'https://m.media-amazon.com/images/I/618d5bS2lUL._AC_SL1500_.jpg',
+										price: 1839.08,
+										items: [{ price: 1839.08 }],
+									},
+								]}
+								categoryId={2}
 							/>
 						</div>
 					</div>
