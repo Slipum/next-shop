@@ -18,8 +18,8 @@ export const ProductCard: React.FC<Props> = ({ id, name, price, imageUrl, classN
 	return (
 		<div className={className}>
 			<Link href={`/product/${id}`}>
-				<div className="flex justify-center p-6 bg-white border border-secondary rounded-lg">
-					<img className="my-[10%] w-[100%] h-[75%]" src={imageUrl} alt={name} />
+				<div className="flex justify-center p-4 bg-secondary border border-secondary rounded-lg">
+					<img className="w-[100%] h-[75%]" src={imageUrl} alt={name} />
 				</div>
 				<Title text={name} className="mb-1 mt-3 font-bold" />
 				<p className="text-sm text-gray-400">

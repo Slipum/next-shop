@@ -22,28 +22,32 @@ export default function Home() {
 									{
 										id: 1,
 										name: 'MacBook Pro Laptop M3 Pro',
-										imageUrl: 'https://m.media-amazon.com/images/I/618d5bS2lUL._AC_SL1500_.jpg',
+										imageUrl:
+											'https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/mbp16-spaceblack-select-202310?wid=904&hei=840&fmt=jpeg&qlt=90&.v=1697311054290',
 										price: 1839.08,
 										items: [{ price: 1839.08 }],
 									},
 									{
 										id: 2,
 										name: 'MacBook Pro Laptop M3 Pro',
-										imageUrl: 'https://m.media-amazon.com/images/I/618d5bS2lUL._AC_SL1500_.jpg',
+										imageUrl:
+											'https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/mbp16-spaceblack-select-202310?wid=904&hei=840&fmt=jpeg&qlt=90&.v=1697311054290',
 										price: 1839.08,
 										items: [{ price: 1839.08 }],
 									},
 									{
 										id: 3,
 										name: 'MacBook Pro Laptop M3 Pro',
-										imageUrl: 'https://m.media-amazon.com/images/I/618d5bS2lUL._AC_SL1500_.jpg',
+										imageUrl:
+											'https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/mbp16-spaceblack-select-202310?wid=904&hei=840&fmt=jpeg&qlt=90&.v=1697311054290',
 										price: 1839.08,
 										items: [{ price: 1839.08 }],
 									},
 									{
 										id: 4,
 										name: 'MacBook Pro Laptop M3 Pro',
-										imageUrl: 'https://m.media-amazon.com/images/I/618d5bS2lUL._AC_SL1500_.jpg',
+										imageUrl:
+											'https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/mbp16-spaceblack-select-202310?wid=904&hei=840&fmt=jpeg&qlt=90&.v=1697311054290',
 										price: 1839.08,
 										items: [{ price: 1839.08 }],
 									},
@@ -56,28 +60,32 @@ export default function Home() {
 									{
 										id: 1,
 										name: 'MacBook Pro Laptop M3 Pro',
-										imageUrl: 'https://m.media-amazon.com/images/I/618d5bS2lUL._AC_SL1500_.jpg',
+										imageUrl:
+											'https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/mbp16-spaceblack-select-202310?wid=904&hei=840&fmt=jpeg&qlt=90&.v=1697311054290',
 										price: 1839.08,
 										items: [{ price: 1839.08 }],
 									},
 									{
 										id: 2,
 										name: 'MacBook Pro Laptop M3 Pro',
-										imageUrl: 'https://m.media-amazon.com/images/I/618d5bS2lUL._AC_SL1500_.jpg',
+										imageUrl:
+											'https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/mbp16-spaceblack-select-202310?wid=904&hei=840&fmt=jpeg&qlt=90&.v=1697311054290',
 										price: 1839.08,
 										items: [{ price: 1839.08 }],
 									},
 									{
 										id: 3,
 										name: 'MacBook Pro Laptop M3 Pro',
-										imageUrl: 'https://m.media-amazon.com/images/I/618d5bS2lUL._AC_SL1500_.jpg',
+										imageUrl:
+											'https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/mbp16-spaceblack-select-202310?wid=904&hei=840&fmt=jpeg&qlt=90&.v=1697311054290',
 										price: 1839.08,
 										items: [{ price: 1839.08 }],
 									},
 									{
 										id: 4,
 										name: 'MacBook Pro Laptop M3 Pro',
-										imageUrl: 'https://m.media-amazon.com/images/I/618d5bS2lUL._AC_SL1500_.jpg',
+										imageUrl:
+											'https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/mbp16-spaceblack-select-202310?wid=904&hei=840&fmt=jpeg&qlt=90&.v=1697311054290',
 										price: 1839.08,
 										items: [{ price: 1839.08 }],
 									},
