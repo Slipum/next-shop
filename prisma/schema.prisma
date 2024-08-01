@@ -15,6 +15,7 @@ model User {
   email    String   @unique
   password String
   role     UserRole @default(USER)
+  verified DateTime
 
   provider   String?
   providerId String?
@@ -25,13 +26,15 @@ model User {
 
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
-  cartId    Int
 }
 
 model Category {
   id       Int       @id @default(autoincrement())
   name     String    @unique
   products Product[]
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
 }
 
 model Product {
@@ -106,7 +109,7 @@ model CartItem {
 
   quantity Int
 
-  ingredientss Ingredient[]
+  ingredients Ingredient[]
 
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
