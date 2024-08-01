@@ -1,5 +1,5 @@
 import { hashSync } from 'bcrypt';
-import { categories } from './constants';
+import { additions, categories } from './constants';
 import { prisma } from './prisma-client';
 
 async function up() {
@@ -24,6 +24,10 @@ async function up() {
 
 	await prisma.category.createMany({
 		data: categories,
+	});
+
+	await prisma.addition.createMany({
+		data: additions,
 	});
 }
 
