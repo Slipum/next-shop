@@ -30,4 +30,4 @@ export const additions = [
 	},
 ].map((obj, index) => ({ id: index + 1, ...obj }));
 
-export const products = [];
+export const products = [{}];
