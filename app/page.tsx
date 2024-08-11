@@ -1,6 +1,11 @@
+'use client';
+
 import { Container, Filters, ProductsGroupList, Title, TopBar } from '@/components/shared';
+import { Product } from '@prisma/client';
+import React from 'react';
 
 export default function Home() {
+	const [products, setProducts] = React.useState<Product[]>([]);
 	return (
 		<>
 			<Container className="pt-10">

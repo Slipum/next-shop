@@ -1,10 +1,12 @@
 'use client';
 
 import { cn } from '@/lib/utils';
+import { Api } from '@/services/api-client';
+import { Product } from '@prisma/client';
 import { Search } from 'lucide-react';
 import Link from 'next/link';
 import React from 'react';
-import { useClickAway } from 'react-use';
+import { useClickAway, useDebounce } from 'react-use';
 import { Input } from '../ui';
 
 interface Props {
@@ -12,12 +14,30 @@ interface Props {
 }
 
 export const SearchInput: React.FC<Props> = ({ className }) => {
+	const [searchQuery, setSearchQuery] = React.useState('');
 	const [focused, setFocused] = React.useState(false);
+	const [products, setProducts] = React.useState<Product[]>([]);
 	const ref = React.useRef(null);
 
 	useClickAway(ref, () => {
 		setFocused(false);
 	});
+
+	useDebounce(
+		() => {
+			Api.products.search(searchQuery).then((items) => {
+				setProducts(items);
+			});
+		},
+		250,
+		[searchQuery],
+	);
+
+	const onClickItem = () => {
+		setFocused(false);
+		setSearchQuery('');
+		setProducts([]);
+	};
 
 	return (
 		<>
@@ -31,16 +51,27 @@ export const SearchInput: React.FC<Props> = ({ className }) => {
 					type="text"
 					placeholder="Find product..."
 					onFocus={() => setFocused(true)}
+					value={searchQuery}
+					onChange={(e) => setSearchQuery(e.target.value)}
 				/>
-				<div
-					className={cn(
-						'absolute w-full bg-white rounded-xl py-2 top-14 shadow-md transition-all duration-200 invisible opacity-0 z-30',
-						focused && 'visible opacity-100 top-12',
-					)}>
-					<Link href="/product/1">
-						<div className="px-3 py-2 hover:bg-primary/10 cursor-pointer">ghhghghghg</div>
-					</Link>
-				</div>
+				{products.length > 0 && (
+					<div
+						className={cn(
+							'absolute w-full bg-gray-100 rounded-xl py-2 top-14 shadow-md transition-all duration-200 invisible opacity-0 z-30',
+							focused && 'visible opacity-100 top-12',
+						)}>
+						{products.map((products) => (
+							<Link
+								key={products.id}
+								className="flex items-center gap-4 w-full px-3 py-2 hover:bg-primary/10"
+								href={`/product/${products.id}`}
+								onClick={onClickItem}>
+								<img className="rounded-sm h-8 w-8" src={products.imageUrl} alt={products.name} />
+								<div>{products.name}</div>
+							</Link>
+						))}
+					</div>
+				)}
 			</div>
 		</>
 	);
